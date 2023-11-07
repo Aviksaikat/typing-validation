@@ -32,6 +32,11 @@ typing-validation: Validation using Type Hints
 
 Typing-validation is a small library to perform runtime validation of Python objects using `PEP 484 type hints <https://www.python.org/dev/peps/pep-0484/>`_.
 
+
+This is a temporary fork of the original project to be used until the original project incorporates a bug fix to work with newer versions of the 'typing_extensions' dependency.
+
+Bug: https://github.com/hashberg-io/typing-validation/issues/1
+
 .. contents::
 
 

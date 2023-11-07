@@ -8,7 +8,7 @@ import pytest
 
 from typing_validation.validation import (validate, validation_aliases, _pseudotypes, _pseudotypes_dict)
 
-if sys.version_info[1] >= 8:
+if sys.version_info[1] >= 11:
     from typing import Literal
 else:
     from typing_extensions import Literal
@@ -137,7 +137,7 @@ def test_specific_invalid_cases(val: typing.Any, ts: typing.List[typing.Any]) ->
 
 _union_cases = (
     (0, [typing.Union[int], typing.Union[str, int], typing.Union[int, str], typing.Optional[int]]),
-    ("hello", [typing.Union[str, int], typing.Union[int, str], typing.Optional[str]]),
+    ("hello", [typing.Union[str, int], typing.Union[int, str], typing.Optional[str], typing.Union[int, Literal["hello"]]]),
 )
 
 @pytest.mark.parametrize("val, ts", _union_cases)

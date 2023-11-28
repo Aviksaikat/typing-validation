@@ -130,7 +130,7 @@ class TypeInspector:
         param: Any
         tag, param = self._recorded_constructors[idx]
         if tag == "unsupported":
-            return UnsupportedType[param], idx # type: ignore[index]
+            return UnsupportedType[param], idx # type: ignore
         if tag == "none":
             return None, idx
         if tag == "any":

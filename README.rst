@@ -47,7 +47,7 @@ You can install the latest release from `PyPI <https://pypi.org/project/multifor
 
 .. code-block::
 
-    pip install --upgrade typing-validation
+    pip install --upgrade typing-validation-fix
 
 
 Usage
